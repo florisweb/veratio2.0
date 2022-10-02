@@ -1,7 +1,16 @@
-import { UIBaseElement } from './UI';
+// import { SideBar, HTML } from './sideBar';
 
-const App = new function() {
-  this.setup = function() {
+export const App = new class {
+  constructor() {
     console.log('hey');
+
+    let a = <div>test</div>;
+    console.log(a);
   }
+}
+
+
+
+function createElement() {
+  return false;
 }

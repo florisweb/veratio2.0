@@ -1,12 +1,12 @@
 
 
 
-
 export class UIBaseElement {
   constructor() {
 
   }
   createHTML() {
-    return <div>Hey there</div>;
+    let html:any = <div>Hey there</div>;
+    return html;
   }
 }

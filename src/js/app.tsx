@@ -9,8 +9,7 @@ export const App = new class {
   }
 }
 
-
-
 function createElement() {
+  console.log(...arguments);
   return false;
 }

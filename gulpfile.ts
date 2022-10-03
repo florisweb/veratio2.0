@@ -15,7 +15,8 @@ function compileJavascript() {
 	return 	mergeTSX()
 			.pipe(typescript({
 				jsx: 'preserve',
-				// module: 'system'
+				downlevelIteration: true,
+				moduleResolution: "node"
 			}))
 			.pipe(babel())
 			.pipe(browserify({

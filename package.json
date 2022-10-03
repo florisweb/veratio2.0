@@ -22,12 +22,11 @@
     "gulp-babel": "^8.0.0",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.1",
-    "gulp-livereload": "^4.0.2",
-    "gulp-sourcemaps": "^3.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
+    "@types/react-dom": "^18.0.6",
     "gulp-cli": "^2.3.0"
   }
 }

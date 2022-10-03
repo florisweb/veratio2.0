@@ -8,8 +8,3 @@ export const App = new class {
     console.log(a);
   }
 }
-
-function createElement() {
-  console.log(...arguments);
-  return false;
-}

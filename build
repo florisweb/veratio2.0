@@ -1,0 +1,19 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+rm -rf dist
+mkdir dist
+
+echo - Building CSS
+
+cat src/**/*.css > dist/main_min.css
+cp src/index.php dist/index.php
+
+cp -r src/images dist/images
+cp -r src/database dist/database
+
+echo - Building Java/typescript
+npx webpack
+
+echo \|-------------------\|
+echo \| Finished Building \|
+echo \|-------------------\|

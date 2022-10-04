@@ -3,10 +3,10 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "sourceMap": true,
-    "module": "ES6",
-    "target": "ES6",
+    "module": "es2022",
+    "target": "es2022",
     "allowJs": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
     "moduleResolution": "node",
   }
 }

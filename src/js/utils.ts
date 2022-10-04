@@ -1,4 +1,5 @@
-function createElement(tag: any, props: any, ...children: Array<Element>) {
+
+export function createElement(tag: any, props: any, children: Array<Element> = []) {
 	const element = document.createElement(tag)
 
 	Object.entries(props || {}).forEach(([name, value]) => {

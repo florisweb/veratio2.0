@@ -1,0 +1,9 @@
+
+#sideBar {
+    position: relative;
+    width: var(--sideBar-width);
+    height: var(--window-height);
+    padding: 30px;
+
+    background: rgb(245, 240, 245);
+}

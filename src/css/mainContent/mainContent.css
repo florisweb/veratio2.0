@@ -1,0 +1,72 @@
+
+#mainContent {
+    position: relative;
+    width: calc(100vw - var(--sideBar-width));
+    height: var(--window-height);
+    overflow: auto;
+}
+
+#mainContent > .page {
+    position: absolute;
+    width: calc(100vw - var(--sideBar-width));
+    height: auto;
+    
+    transition: opacity .3s;
+}
+
+#mainContent > .page.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+    #mainContent > .page > .pageHeader {
+        position: sticky;
+
+        width: 100%;
+        height: 250px;
+        top: -190px; /* To set the sticky offset*/
+
+        padding: 30px;
+        padding-bottom: 10px;
+
+        background: url('images/pageHeaderBackground.png');
+        background-size: 100% 100%;
+        display: grid;
+        grid-template: 
+            ". ."
+            "title ."
+            "subTitle .";
+
+        grid-template-rows: auto 35px 40px;
+        grid-template-columns: auto auto;
+        z-index: 1;
+    }
+
+        #mainContent > .page > .pageHeader > .pageTitle {
+            position: sticky;
+            top: 70px;
+            grid-area: title;
+            color: #fff;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        #mainContent > .page > .pageHeader > .subTitle {
+            position: sticky;
+            top: 100px;
+            grid-area: subTitle;
+            color: #fff;
+            font-size: 14px;
+            transition: margin-left .3s;
+        }
+       
+    
+
+        #mainContent > .page > .pageContent {
+            position: relative;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            height: 100vh;
+        }
